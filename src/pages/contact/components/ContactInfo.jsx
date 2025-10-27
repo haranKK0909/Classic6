@@ -7,22 +7,22 @@ const ContactInfo = () => {
     {
       icon: 'Phone',
       label: 'Phone',
-      value: '(555) 123-4567',
+      value: '(+91) 9870654345',
       description: 'Call or text for immediate assistance',
       action: 'tel:+15551234567'
     },
     {
       icon: 'Mail',
       label: 'Email',
-      value: 'hello@visualstory.photography',
+      value: 'hello@classic6.photography',
       description: 'We respond within 24 hours',
-      action: 'mailto:hello@visualstory.photography'
+      action: 'mailto:hello@classic6.photography'
     },
     {
       icon: 'MapPin',
       label: 'Service Area',
-      value: 'San Francisco Bay Area',
-      description: 'Travel available throughout California',
+      value: 'Erode',
+      description: 'Travel available throughout Tamil Nadu',
       action: null
     },
     {
@@ -145,7 +145,7 @@ const ContactInfo = () => {
             fullWidth
             iconName="Calendar"
             iconPosition="left"
-            onClick={() => window.open('tel:+15551234567', '_self')}
+            onClick={() => window.open('tel:+919870654345', '_self')}
             className="justify-start font-body"
           >
             Schedule a Call
@@ -190,7 +190,7 @@ const ContactInfo = () => {
               size="sm"
               iconName="Phone"
               iconPosition="left"
-              onClick={() => window.open('tel:+15551234567', '_self')}
+              onClick={() => window.open('tel:+919870654345', '_self')}
               className="bg-accent hover:bg-accent/90 text-accent-foreground font-body"
             >
               Call Now

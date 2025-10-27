@@ -12,7 +12,7 @@ const ContactPage = () => {
   return (
     <>
       <Helmet>
-        <title>Contact & Booking - VisualStory Photography | Capture Your Celebration</title>
+        <title>Contact & Booking - Classic6 Photography | Capture Your Celebration</title>
         <meta 
           name="description" 
           content="Ready to capture your special moments? Contact VisualStory Photography for weddings, family portraits, maternity sessions, and celebration photography. Professional, artistic, and personalized service." 
@@ -58,10 +58,10 @@ const ContactPage = () => {
                   size="lg"
                   iconName="Phone"
                   iconPosition="left"
-                  onClick={() => window.open('tel:+15551234567', '_self')}
+                  onClick={() => window.open('tel:+919870654345', '_self')}
                   className="font-body"
                 >
-                  Call (555) 123-4567
+                  Call (+91) 9870654345
                 </Button>
               </div>
             </div>
@@ -108,7 +108,7 @@ const ContactPage = () => {
               </div>
               
               <h2 className="font-display text-3xl md:text-4xl font-medium text-foreground mb-6">
-                Ready to Begin Your Story?
+                Ready to Begin Your Mempry?
               </h2>
               
               <p className="font-body text-lg text-muted-foreground mb-8 leading-relaxed">
@@ -204,8 +204,8 @@ const ContactPage = () => {
                   <a href="/contact" className="block font-body text-sm opacity-80 hover:opacity-100 transition-organic">
                     Contact & Booking
                   </a>
-                  <a href="tel:+15551234567" className="block font-body text-sm opacity-80 hover:opacity-100 transition-organic">
-                    (555) 123-4567
+                  <a href="tel:+919870654345" className="block font-body text-sm opacity-80 hover:opacity-100 transition-organic">
+                    (+91) 9870654345
                   </a>
                 </div>
               </div>
@@ -214,8 +214,8 @@ const ContactPage = () => {
               <div>
                 <h4 className="font-body text-sm font-medium mb-4">Get In Touch</h4>
                 <div className="space-y-2">
-                  <p className="font-body text-sm opacity-80">San Francisco Bay Area</p>
-                  <p className="font-body text-sm opacity-80">hello@visualstory.photography</p>
+                  <p className="font-body text-sm opacity-80">Erode</p>
+                  <p className="font-body text-sm opacity-80">hello@classic6.photography</p>
                   <p className="font-body text-sm opacity-80">Response within 24 hours</p>
                 </div>
               </div>
@@ -223,7 +223,7 @@ const ContactPage = () => {
             
             <div className="border-t border-background/20 mt-8 pt-8 text-center">
               <p className="font-body text-xs opacity-60">
-                © {new Date()?.getFullYear()} VisualStory Photography. All rights reserved.
+                © {new Date()?.getFullYear()} Classic6 Photography. All rights reserved.
               </p>
             </div>
           </div>

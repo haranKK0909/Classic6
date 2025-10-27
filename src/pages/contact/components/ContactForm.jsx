@@ -242,7 +242,7 @@ const ContactForm = () => {
           name="phone"
           value={formData?.phone}
           onChange={handleInputChange}
-          placeholder="(555) 123-4567"
+          placeholder="(+91) 9870654345"
           error={errors?.phone}
           required
         />
@@ -286,7 +286,7 @@ const ContactForm = () => {
           className="mb-6"
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
           <Select
             label="Expected Guest Count"
             options={guestCountOptions}

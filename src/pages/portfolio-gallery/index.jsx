@@ -4,7 +4,6 @@ import CategoryFilter from './components/CategoryFilter';
 import FeaturedSlideshow from './components/FeaturedSlideshow';
 import GalleryGrid from './components/GalleryGrid';
 import ImageLightbox from './components/ImageLightbox';
-// import ClientTestimonial from './components/ClientTestimonial';
 import CallToAction from './components/CallToAction';
 import Icon from '../../components/AppIcon';
 
@@ -164,7 +163,6 @@ const PortfolioGallery = () => {
   }];
 
 
-  // Mock testimonials data
   const testimonials = [
   {
     id: 'testimonial-1',
@@ -188,7 +186,6 @@ const PortfolioGallery = () => {
   }];
 
 
-  // Filter images based on active category
   const filteredImages = useMemo(() => {
     if (activeCategory === 'all') {
       return galleryImages;
@@ -219,7 +216,7 @@ const PortfolioGallery = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-medium text-foreground mb-6">
-              Visual Stories That Last Forever
+              Classic6 That Last Forever
             </h1>
             <p className="font-body text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
               Every celebration tells a unique story deserving to be captured with artistic excellence. 
