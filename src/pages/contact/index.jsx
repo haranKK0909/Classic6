@@ -194,8 +194,8 @@ const ContactPage = () => {
                     />
                   </svg>
                   <div>
-                    <h3 className="font-display text-lg font-medium">VisualStory</h3>
-                    <p className="font-body text-xs opacity-80">Photography</p>
+                    <h3 className="font-display text-lg font-medium">Class6</h3>
+                    <p className="font-body text-xs opacity-80">Photographs</p>
                   </div>
                 </div>
                 <p className="font-body text-sm opacity-80 leading-relaxed">
