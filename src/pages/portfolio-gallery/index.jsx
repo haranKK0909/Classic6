@@ -67,7 +67,7 @@ const PortfolioGallery = () => {
       alt: 'Pregnant woman in pink dress holding ultrasound photo while partner kisses her forehead',
       title: 'Sweet Anticipation',
       description: 'The joy of expecting parents sharing their first glimpse of their little miracle.',
-      category: 'Wedding',
+      category: 'Engagement',
       client: 'Emma & David Rodriguez'
     },
     {
@@ -76,7 +76,7 @@ const PortfolioGallery = () => {
       alt: 'Five-year-old girl in princess dress blowing out candles on rainbow birthday cake',
       title: 'Princess Birthday Dreams',
       description: 'Every little girl deserves to feel like royalty on her special day.',
-      category: 'Baby Shower',
+      category: 'Engagement',
       client: 'Isabella Chen - 5th Birthday'
     },
     {
@@ -103,7 +103,7 @@ const PortfolioGallery = () => {
       alt: 'Family of four walking hand in hand through autumn leaves in park',
       title: 'Autumn Family Stroll',
       description: 'The beauty of family bonds captured among nature\'s golden palette.',
-      category: 'Engagement',
+      category: 'baby',
       client: 'The Williams Family'
     },
     {
@@ -112,7 +112,7 @@ const PortfolioGallery = () => {
       alt: 'Bride in vintage lace dress holding bouquet of white peonies and greenery',
       title: 'Vintage Elegance',
       description: 'Timeless beauty captured in delicate lace and fresh blooms.',
-      category: 'Wedding',
+      category: 'family',
       client: 'Catherine & James Wilson'
     },
     {
@@ -121,7 +121,7 @@ const PortfolioGallery = () => {
       alt: 'Toddler boy in suspenders and bow tie reaching for colorful birthday balloons',
       title: 'Little Gentleman',
       description: 'The wonder and excitement of childhood celebrations.',
-      category: 'Birthday',
+      category: 'Wedding',
       client: 'Oliver Johnson - 2nd Birthday'
     },
     {
@@ -130,7 +130,7 @@ const PortfolioGallery = () => {
       alt: 'Couple laughing together while sitting on vintage blanket during picnic engagement session',
       title: 'Picnic Proposal',
       description: 'Love shared over simple moments and heartfelt laughter.',
-      category: 'Engagement',
+      category: 'baby',
       client: 'Sophia & Marcus Taylor'
     },
     {
@@ -148,7 +148,7 @@ const PortfolioGallery = () => {
       alt: 'Baby shower setup with pastel decorations, gift table, and expecting mother opening presents',
       title: 'Pastel Paradise',
       description: 'A celebration of new life surrounded by love and anticipation.',
-      category: 'Baby Shower',
+      category: 'baby ',
       client: 'Maria Santos Baby Shower'
     },
     {
