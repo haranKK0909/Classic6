@@ -3,6 +3,20 @@ import { Link, useLocation } from 'react-router-dom';
 import Icon from '../AppIcon';
 import Button from './Button';
 
+const ClassLabel = ({ altText = 'Class icon', className = '6', label = 'Class' }) => (
+  <div className="flex flex-col" role="img" aria-label={`${label} ${className}`}>
+    {/* Image using public folder path (no import needed—served statically) */}
+    <img
+      src="../../pages/assets/images/logo.png"
+      alt={altText}
+      className="w-8 h-8 mb-1 self-start" // Adjusted: smaller margin, self-start for left alignment like original SVG
+    />
+    <span className="font-body text-xs text-muted-foreground tracking-wide">
+      {className}
+    </span>
+  </div>
+);
+
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -40,57 +54,12 @@ const Header = () => {
     >
       <div className="w-full">
         <div className="flex items-center justify-between h-16 px-6 lg:px-8">
-          {/* Logo */}
+          {/* Logo - Restored horizontal layout for better alignment with original */}
           <Link 
             to="/" 
             className="flex items-center space-x-3 group transition-organic hover:opacity-80"
           >
-            <div className="relative">
-              <svg 
-                width="40" 
-                height="40" 
-                viewBox="0 0 40 40" 
-                fill="none" 
-                xmlns="http://www.w3.org/2000/svg"
-                className="transition-organic group-hover:scale-105"
-              >
-                <circle 
-                  cx="20" 
-                  cy="20" 
-                  r="18" 
-                  stroke="var(--color-accent)" 
-                  strokeWidth="2" 
-                  fill="none"
-                />
-                <circle 
-                  cx="20" 
-                  cy="20" 
-                  r="8" 
-                  fill="var(--color-accent)" 
-                  opacity="0.2"
-                />
-                <circle 
-                  cx="20" 
-                  cy="20" 
-                  r="4" 
-                  fill="var(--color-accent)"
-                />
-                <path 
-                  d="M12 12L28 28M28 12L12 28" 
-                  stroke="var(--color-accent)" 
-                  strokeWidth="1" 
-                  opacity="0.3"
-                />
-              </svg>
-            </div>
-            <div className="flex flex-col">
-              <span className="font-display text-xl font-medium text-foreground leading-none">
-                VisualStory
-              </span>
-              <span className="font-body text-xs text-muted-foreground tracking-wide">
-                Photography
-              </span>
-            </div>
+            <ClassLabel className="6" />
           </Link>
 
           {/* Desktop Navigation */}

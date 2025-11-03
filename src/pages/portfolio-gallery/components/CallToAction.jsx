@@ -38,6 +38,7 @@ const CallToAction = () => {
             size="lg"
             iconName="Phone"
             iconPosition="left"
+            onClick={() => window.open('tel:+919870654345', '_self')}
           >
             Call (+91) 9870654345
           </Button>

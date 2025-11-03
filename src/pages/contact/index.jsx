@@ -9,6 +9,13 @@ import Icon from '../../components/AppIcon';
 import Button from '../../components/ui/Button';
 
 const ContactPage = () => {
+  const scrollToForm = () => {
+    const contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+      contactForm.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <>
       <Helmet>
@@ -50,6 +57,7 @@ const ContactPage = () => {
                   iconName="Calendar"
                   iconPosition="left"
                   className="bg-accent hover:bg-accent/90 text-accent-foreground font-body"
+                  onClick={scrollToForm}
                 >
                   Book Consultation
                 </Button>
@@ -73,7 +81,7 @@ const ContactPage = () => {
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
               {/* Contact Form - Takes up 2 columns on large screens */}
-              <div className="lg:col-span-2">
+              <div id="contact-form" className="lg:col-span-2"> {/* Added ID for smooth scroll target */}
                 <ContactForm />
               </div>
               
@@ -108,7 +116,7 @@ const ContactPage = () => {
               </div>
               
               <h2 className="font-display text-3xl md:text-4xl font-medium text-foreground mb-6">
-                Ready to Begin Your Mempry?
+                Ready to Begin Your Memory?
               </h2>
               
               <p className="font-body text-lg text-muted-foreground mb-8 leading-relaxed">
@@ -124,6 +132,7 @@ const ContactPage = () => {
                   iconName="Send"
                   iconPosition="left"
                   className="bg-accent hover:bg-accent/90 text-accent-foreground font-body"
+                  onClick={scrollToForm} // Optional: Also scroll from here if desired
                 >
                   Send Your Inquiry
                 </Button>
