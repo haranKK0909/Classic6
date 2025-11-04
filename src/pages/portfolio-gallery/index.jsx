@@ -54,7 +54,7 @@ const PortfolioGallery = () => {
   const galleryImages = [
     {
       id: 'img-1',
-      src: "assets/images/wed1.jpg",
+      src: "/assets/images/wed1.jpg",
       alt: 'Bride and groom sharing first dance under string lights in rustic barn venue',
       title: 'First Dance Magic',
       description: 'The moment when two hearts become one, surrounded by the warm glow of celebration.',
@@ -63,7 +63,7 @@ const PortfolioGallery = () => {
     },
     {
       id: 'img-2',
-      src: "assets/images/eng1.jpg",
+      src: "/assets/images/eng1.jpg",
       alt: 'Pregnant woman in pink dress holding ultrasound photo while partner kisses her forehead',
       title: 'Sweet Anticipation',
       description: 'The joy of expecting parents sharing their first glimpse of their little miracle.',
@@ -72,7 +72,7 @@ const PortfolioGallery = () => {
     },
     {
       id: 'img-3',
-      src: "assets/images/eng3.JPG",
+      src: "/assets/images/eng3.JPG",
       alt: 'Five-year-old girl in princess dress blowing out candles on rainbow birthday cake',
       title: 'Princess Birthday Dreams',
       description: 'Every little girl deserves to feel like royalty on her special day.',
@@ -81,7 +81,7 @@ const PortfolioGallery = () => {
     },
     {
       id: 'img-4',
-      src: "assets/images/bs2.jpg",
+      src: "/assets/images/bs2.jpg",
       alt: 'Couple embracing on beach at sunset with waves gently lapping at their feet',
       title: 'Seaside Romance',
       description: 'Love as endless as the ocean, captured in the golden hour of their engagement.',
@@ -90,7 +90,7 @@ const PortfolioGallery = () => {
     },
     {
       id: 'img-5',
-      src: "assets/images/eng2.jpg",
+      src: "/assets/images/eng2.jpg",
       alt: 'Pregnant woman in white dress surrounded by pink and gold balloons and baby shower decorations',
       title: 'Baby Shower Bliss',
       description: 'Celebrating the upcoming arrival with friends, family, and endless love.',
@@ -99,7 +99,7 @@ const PortfolioGallery = () => {
     },
     {
       id: 'img-6',
-      src: "assets/images/baby1.jpg",
+      src: "/assets/images/baby1.jpg",
       alt: 'Family of four walking hand in hand through autumn leaves in park',
       title: 'Autumn Family Stroll',
       description: 'The beauty of family bonds captured among nature\'s golden palette.',
@@ -108,7 +108,7 @@ const PortfolioGallery = () => {
     },
     {
       id: 'img-7',
-      src: "assets/images/p1.jpg",
+      src: "/assets/images/p1.jpg",
       alt: 'Bride in vintage lace dress holding bouquet of white peonies and greenery',
       title: 'Vintage Elegance',
       description: 'Timeless beauty captured in delicate lace and fresh blooms.',
@@ -117,7 +117,7 @@ const PortfolioGallery = () => {
     },
     {
       id: 'img-8',
-      src: "assets/images/wed2.jpg",
+      src: "/assets/images/wed2.jpg",
       alt: 'Toddler boy in suspenders and bow tie reaching for colorful birthday balloons',
       title: 'Little Gentleman',
       description: 'The wonder and excitement of childhood celebrations.',
@@ -126,7 +126,7 @@ const PortfolioGallery = () => {
     },
     {
       id: 'img-9',
-      src: "assets/images/baby2.jpg",
+      src: "/assets/images/baby2.jpg",
       alt: 'Couple laughing together while sitting on vintage blanket during picnic engagement session',
       title: 'Picnic Proposal',
       description: 'Love shared over simple moments and heartfelt laughter.',
@@ -135,7 +135,7 @@ const PortfolioGallery = () => {
     },
     {
       id: 'img-10',
-      src: "assets/images/wed3.jpg",
+      src: "/assets/images/wed3.jpg",
       alt: 'Expecting mother in flowing blue dress standing in field of wildflowers at golden hour',
       title: 'Wildflower Dreams',
       description: 'The natural beauty of motherhood blooming like flowers in the field.',
@@ -144,16 +144,16 @@ const PortfolioGallery = () => {
     },
     {
       id: 'img-11',
-      src: "assets/images/baby3.jpg",
+      src: "/assets/images/baby3.jpg",
       alt: 'Baby shower setup with pastel decorations, gift table, and expecting mother opening presents',
       title: 'Pastel Paradise',
       description: 'A celebration of new life surrounded by love and anticipation.',
-      category: 'baby ',
+      category: 'baby',
       client: 'Maria Santos Baby Shower'
     },
     {
       id: 'img-12',
-      src: "assets/images/bs1.jpg",
+      src: "/assets/images/bs1.jpg",
       alt: 'Three generations of women - grandmother, mother, and daughter - embracing in garden',
       title: 'Generations of Love',
       description: 'The beautiful legacy of love passed down through generations.',

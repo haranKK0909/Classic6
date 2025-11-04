@@ -4,14 +4,14 @@ import Icon from '../AppIcon';
 import Button from './Button';
 
 const ClassLabel = ({ altText = 'Class icon', className = '6', label = 'Class' }) => (
-  <div className="flex flex-col" role="img" aria-label={`${label} ${className}`}>
-    {/* Image using public folder path (no import needed—served statically) */}
+  <div className="flex flex-col items-center" role="img" aria-label={`${label} ${className}`}>
+    {/* Image using public folder path (no import needed—served statically) - rectangle format, increased size */}
     <img
-      src="../../pages/assets/images/logo.png"
+      src="/assets/images/logo2.png"
       alt={altText}
-      className="w-8 h-8 mb-1 self-start" // Adjusted: smaller margin, self-start for left alignment like original SVG
+      className="w-20 h-20 mb-3 object-contain" // Rectangle (wider than tall), increased from w-8 h-8; object-contain to fit without distortion
     />
-    <span className="font-body text-xs text-muted-foreground tracking-wide">
+    <span className="font-body text-xs text-muted-foreground tracking-wide text-center">
       {className}
     </span>
   </div>
@@ -54,12 +54,12 @@ const Header = () => {
     >
       <div className="w-full">
         <div className="flex items-center justify-between h-16 px-6 lg:px-8">
-          {/* Logo - Restored horizontal layout for better alignment with original */}
+          {/* Logo - Restored horizontal layout for better alignment with original; centered on mobile */}
           <Link 
             to="/" 
-            className="flex items-center space-x-3 group transition-organic hover:opacity-80"
+            className="flex items-center space-x-3 group transition-organic hover:opacity-80 mx-auto md:mx-0" // mx-auto centers on mobile (<md), normal on desktop
           >
-            <ClassLabel className="6" />
+            <ClassLabel className="" />
           </Link>
 
           {/* Desktop Navigation */}
@@ -100,7 +100,7 @@ const Header = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={toggleMenu}
-            className="md:hidden p-2 rounded-lg text-foreground hover:text-accent hover:bg-accent/5 transition-organic"
+            className="md:hidden p-2 rounded-lg text-foreground hover:text-accent hover:bg-accent/5 transition-organic absolute right-4 top-1/2 -translate-y-1/2" // Positioned absolutely on right for centering logo
             aria-label="Toggle menu"
           >
             <Icon name={isMenuOpen ? 'X' : 'Menu'} size={24} />
