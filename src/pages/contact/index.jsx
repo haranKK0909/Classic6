@@ -164,35 +164,11 @@ const ContactPage = () => {
               {/* Brand */}
               <div>
                 <div className="flex items-center space-x-3 mb-4">
-                  <svg 
-                    width="32" 
-                    height="32" 
-                    viewBox="0 0 40 40" 
-                    fill="none" 
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <circle 
-                      cx="20" 
-                      cy="20" 
-                      r="18" 
-                      stroke="var(--color-accent)" 
-                      strokeWidth="2" 
-                      fill="none"
-                    />
-                    <circle 
-                      cx="20" 
-                      cy="20" 
-                      r="8" 
-                      fill="var(--color-accent)" 
-                      opacity="0.2"
-                    />
-                    <circle 
-                      cx="20" 
-                      cy="20" 
-                      r="4" 
-                      fill="var(--color-accent)"
-                    />
-                  </svg>
+                  {/* <img
+                    src="/assets/images/logo2.png"
+                    alt="Class6 Photographs"
+                    className="w-8 h-8 object-contain" // Matches original SVG size; object-contain to fit without distortion
+                  /> */}
                   <div>
                     <h3 className="font-display text-lg font-medium">Class6</h3>
                     <p className="font-body text-xs opacity-80">Photographs</p>
