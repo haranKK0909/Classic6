@@ -11,11 +11,11 @@ const CallToAction = () => {
           <Icon name="Camera" size={32} className="text-accent" />
         </div>
         
-        <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-4">
+        <h2 className="font-script text-2xl md:text-3xl font-script text-foreground mb-4">
           Ready to Create Your Classic memories?
         </h2>
         
-        <p className="font-body text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+        <p className="font-accent text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
           Let's capture the magic of your special moments with artistry and authenticity. 
           Every celebration deserves to be remembered beautifully.
         </p>
@@ -45,7 +45,7 @@ const CallToAction = () => {
         </div>
         
         <div className="mt-8 pt-6 border-t border-border">
-          <p className="font-body text-sm text-muted-foreground">
+          <p className="font-accent text-sm text-muted-foreground">
             <Icon name="Clock" size={16} className="inline mr-2" />
             Typically responds within 24 hours • Free consultation available
           </p>

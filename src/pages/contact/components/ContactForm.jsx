@@ -174,17 +174,17 @@ const ContactForm = () => {
         <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-6">
           <Icon name="CheckCircle" size={32} className="text-accent" />
         </div>
-        <h3 className="font-display text-2xl font-medium text-foreground mb-4">
+        <h3 className="font-script text-2xl font-script text-foreground mb-4">
           Thank You for Your Inquiry!
         </h3>
-        <p className="font-body text-muted-foreground mb-6 leading-relaxed">
+        <p className="font-accent text-muted-foreground mb-6 leading-relaxed">
           We've received your message and are excited to learn about your celebration. You can expect a personal response within 24 hours. We'll discuss your vision, 
           answer any questions, and explore how we can capture your special moments beautifully.
         </p>
         <Button 
           variant="outline" 
           onClick={() => setIsSubmitted(false)}
-          className="font-body"
+          className="font-accent"
         >
           Send Another Message
         </Button>
@@ -195,15 +195,15 @@ const ContactForm = () => {
   return (
     <form onSubmit={handleSubmit} className="bg-background rounded-2xl shadow-soft p-8 space-y-6">
       <div className="text-center mb-8">
-        <h3 className="font-display text-2xl font-medium text-foreground mb-3">
+        <h3 className="font-script text-2xl font-script text-foreground mb-3">
           Let's Create Something Beautiful Together
         </h3>
-        <p className="font-body text-muted-foreground">
+        <p className="font-accent text-muted-foreground">
           Tell us about your celebration and vision. We'll respond within 24 hours.
         </p>
       </div>
       {/* Personal Information */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="font-accent font-medium grid grid-cols-1 md:grid-cols-2 gap-6">
         <Input
           label="First Name"
           type="text"
@@ -225,7 +225,7 @@ const ContactForm = () => {
           required
         />
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="font-accent font-medium grid grid-cols-1 md:grid-cols-2 gap-6">
         <Input
           label="Email Address"
           type="email"
@@ -249,11 +249,11 @@ const ContactForm = () => {
       </div>
       {/* Event Details */}
       <div className="border-t border-border pt-6">
-        <h4 className="font-display text-lg font-medium text-foreground mb-4">
+        <h4 className="font-script text-lg font-script text-foreground mb-4">
           Event Details
         </h4>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+        <div className="font-accent font-medium grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
           <Select
             label="Event Type"
             options={eventTypeOptions}
@@ -273,7 +273,7 @@ const ContactForm = () => {
             required
           />
         </div>
-
+        <div className="font-accent font-medium">
         <Input
           label="Event Location"
           type="text"
@@ -283,10 +283,10 @@ const ContactForm = () => {
           placeholder="City, State or Venue Name"
           error={errors?.location}
           required
-          className="mb-6"
+          className="font-accent font-medium mb-6"
         />
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+        </div>
+        <div className="font-accent font-medium grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
           <Select
             label="Expected Guest Count"
             options={guestCountOptions}
@@ -306,7 +306,7 @@ const ContactForm = () => {
       {/* Message */}
       <div className="border-t border-border pt-6">
         <div className="mb-6">
-          <label className="block font-body text-sm font-medium text-foreground mb-2">
+          <label className="block font-accent text-sm font-accent text-foreground mb-2">
             Tell Us About Your Vision *
           </label>
           <textarea
@@ -315,23 +315,24 @@ const ContactForm = () => {
             onChange={handleInputChange}
             placeholder="Share your story, style preferences, must-have shots, timeline, or any special details that will help us understand your vision..."
             rows={6}
-            className={`w-full px-4 py-3 border rounded-lg font-body text-sm transition-organic focus:outline-none focus:ring-2 focus:ring-accent/20 focus:border-accent resize-none ${
+            className={`w-full px-4 py-3 border rounded-lg font-accent text-sm transition-organic focus:outline-none focus:ring-2 focus:ring-accent/20 focus:border-accent resize-none ${
               errors?.message 
                 ? 'border-error text-error' :'border-border text-foreground bg-background hover:border-accent/30'
             }`}
           />
           {errors?.message && (
-            <p className="mt-2 text-sm text-error font-body">{errors?.message}</p>
+            <p className="mt-2 text-sm text-error font-accent">{errors?.message}</p>
           )}
         </div>
       </div>
       {/* Preferences */}
-      <div className="border-t border-border pt-6 space-y-4">
+      <div className="font-accent border-t border-black/80 pt-6 space-y-4">
         <Checkbox
           label="Yes, I'd love to receive photography tips and inspiration via email"
           checked={formData?.newsletter}
           onChange={(e) => handleInputChange(e)}
           name="newsletter"
+          
         />
         
         <Checkbox
@@ -352,12 +353,12 @@ const ContactForm = () => {
           fullWidth
           loading={isSubmitting}
           disabled={isSubmitting}
-          className="bg-accent hover:bg-accent/90 text-accent-foreground font-body"
+          className="bg-accent hover:bg-accent/90 text-accent-foreground font-accent"
         >
           {isSubmitting ? 'Sending Your Message...' : 'Send Inquiry'}
         </Button>
         
-        <p className="text-center text-xs text-muted-foreground mt-4 font-body">
+        <p className="text-center text-xs text-muted-foreground mt-4 font-accent">
           We typically respond within 24 hours. For urgent inquiries, please call us directly.
         </p>
       </div>

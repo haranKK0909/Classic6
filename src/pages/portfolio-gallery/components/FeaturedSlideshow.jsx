@@ -49,14 +49,14 @@ const FeaturedSlideshow = ({ featuredImages }) => {
           <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8 lg:p-12 text-white">
             <div className="max-w-4xl">
               <div className="inline-block bg-accent/90 text-accent-foreground px-3 py-1 rounded-md mb-4">
-                <span className="font-body text-sm font-medium">
+                <span className="font-accent text-sm font-accent">
                   {image?.category}
                 </span>
               </div>
-              <h2 className="font-display text-2xl md:text-3xl lg:text-4xl font-medium mb-4">
+              <h2 className="font-script text-2xl md:text-3xl lg:text-4xl font-script mb-4">
                 {image?.title}
               </h2>
-              <p className="font-body text-base md:text-lg opacity-90 mb-6 max-w-2xl">
+              <p className="font-accent text-base md:text-lg opacity-90 mb-6 max-w-2xl">
                 {image?.description}
               </p>
               <Button

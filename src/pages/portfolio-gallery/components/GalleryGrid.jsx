@@ -22,10 +22,10 @@ const GalleryGrid = ({ images, onImageClick }) => {
             <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-organic flex items-center justify-center">
               <div className="opacity-0 group-hover:opacity-100 transition-organic text-white text-center p-4">
                 <Icon name="Eye" size={24} className="mx-auto mb-2" />
-                <h4 className="font-display text-lg font-medium mb-1">
+                <h4 className="font-script text-lg font-script mb-1">
                   {image?.title}
                 </h4>
-                <p className="font-body text-sm opacity-90">
+                <p className="font-accent text-sm opacity-90">
                   {image?.category}
                 </p>
               </div>
@@ -33,7 +33,7 @@ const GalleryGrid = ({ images, onImageClick }) => {
 
             {/* Category Badge */}
             <div className="absolute top-3 left-3 bg-accent/90 text-accent-foreground px-2 py-1 rounded-md">
-              <span className="font-body text-xs font-medium">
+              <span className="font-accent text-xs font-accent">
                 {image?.category}
               </span>
             </div>

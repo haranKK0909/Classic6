@@ -3,7 +3,7 @@ import Button from '../../../components/ui/Button';
 
 const CategoryFilter = ({ categories, activeCategory, onCategoryChange }) => {
   return (
-    <div className="flex flex-wrap justify-center gap-3 mb-12">
+    <div className="font-accent flex flex-wrap justify-center gap-3 mb-12">
       {categories?.map((category) => (
         <Button
           key={category?.id}
@@ -12,7 +12,7 @@ const CategoryFilter = ({ categories, activeCategory, onCategoryChange }) => {
           onClick={() => onCategoryChange(category?.id)}
           className={`transition-organic ${
             activeCategory === category?.id 
-              ? 'bg-accent hover:bg-accent/90 text-accent-foreground' 
+              ? 'font-accent bg-accent hover:bg-accent/90 text-accent-foreground' 
               : 'hover:bg-accent/10 hover:text-accent'
           }`}
         >

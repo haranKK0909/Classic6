@@ -20,7 +20,7 @@ const ClientTestimonial = ({ testimonial }) => {
                 <Icon key={i} name="Star" size={16} className="fill-current" />
               ))}
             </div>
-            <span className="font-body text-sm text-muted-foreground">
+            <span className="font-accent text-sm text-muted-foreground">
               {testimonial?.rating}/5
             </span>
           </div>
@@ -28,10 +28,10 @@ const ClientTestimonial = ({ testimonial }) => {
             "{testimonial?.quote}"
           </blockquote>
           <div>
-            <cite className="font-body font-medium text-foreground not-italic">
+            <cite className="font-accent font-accent text-foreground not-italic">
               {testimonial?.name}
             </cite>
-            <p className="font-body text-sm text-muted-foreground">
+            <p className="font-accent text-sm text-muted-foreground">
               {testimonial?.event} • {testimonial?.date}
             </p>
           </div>

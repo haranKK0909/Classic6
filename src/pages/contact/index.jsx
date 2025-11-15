@@ -40,12 +40,12 @@ const ContactPage = () => {
                 <Icon name="MessageCircle" size={32} className="text-accent" />
               </div>
               
-              <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-medium text-foreground mb-6 leading-tight">
+              <h1 className="font-script text-4xl md:text-5xl lg:text-6xl font-medium text-foreground mb-6 leading-tight">
                 Let's Create Something
                 <span className="block text-accent">Beautiful Together</span>
               </h1>
               
-              <p className="font-body text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-8">
+              <p className="font-accent text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-8">
                 Every celebration tells a unique story. We're here to listen, understand your vision, 
                 and capture the moments that matter most to you and your loved ones.
               </p>
@@ -56,7 +56,7 @@ const ContactPage = () => {
                   size="lg"
                   iconName="Calendar"
                   iconPosition="left"
-                  className="bg-accent hover:bg-accent/90 text-accent-foreground font-body"
+                  className="bg-accent hover:bg-accent/90 text-accent-foreground font-accent"
                   onClick={scrollToForm}
                 >
                   Book Consultation
@@ -67,7 +67,7 @@ const ContactPage = () => {
                   iconName="Phone"
                   iconPosition="left"
                   onClick={() => window.open('tel:+919870654345', '_self')}
-                  className="font-body"
+                  className="font-accent"
                 >
                   Call (+91) 9870654345
                 </Button>
@@ -115,11 +115,11 @@ const ContactPage = () => {
                 <Icon name="Heart" size={40} className="text-accent" />
               </div>
               
-              <h2 className="font-display text-3xl md:text-4xl font-medium text-foreground mb-6">
+              <h2 className="font-script text-3xl md:text-4xl font-medium text-foreground mb-6">
                 Ready to Begin Your Memory?
               </h2>
               
-              <p className="font-body text-lg text-muted-foreground mb-8 leading-relaxed">
+              <p className="font-accent text-lg text-muted-foreground mb-8 leading-relaxed">
                 We can't wait to learn about your celebration and discuss how we can capture 
                 your precious moments with the artistry and care they deserve. Your story 
                 is waiting to be told beautifully.
@@ -131,7 +131,7 @@ const ContactPage = () => {
                   size="lg"
                   iconName="Send"
                   iconPosition="left"
-                  className="bg-accent hover:bg-accent/90 text-accent-foreground font-body"
+                  className="bg-accent hover:bg-accent/90 text-accent-foreground font-accent"
                   onClick={scrollToForm} // Optional: Also scroll from here if desired
                 >
                   Send Your Inquiry
@@ -141,14 +141,14 @@ const ContactPage = () => {
                   size="lg"
                   iconName="Camera"
                   iconPosition="left"
-                  className="font-body"
+                  className="font-accent"
                 >
                   View Our Portfolio
                 </Button>
               </div>
               
               <div className="mt-8 pt-8 border-t border-border">
-                <p className="font-body text-sm text-muted-foreground">
+                <p className="font-accent text-sm text-muted-foreground">
                   <Icon name="Clock" size={16} className="inline mr-2 text-accent" />
                   We typically respond within 24 hours • Available Monday - Saturday
                 </p>
@@ -170,26 +170,26 @@ const ContactPage = () => {
                     className="w-8 h-8 object-contain" // Matches original SVG size; object-contain to fit without distortion
                   /> */}
                   <div>
-                    <h3 className="font-display text-lg font-medium">Class6</h3>
-                    <p className="font-body text-xs opacity-80">Photographs</p>
+                    <h3 className="font-script text-lg font-medium">Class6</h3>
+                    <p className="font-accent text-xs opacity-80">Photographs</p>
                   </div>
                 </div>
-                <p className="font-body text-sm opacity-80 leading-relaxed">
+                <p className="font-accent text-sm opacity-80 leading-relaxed">
                   Capturing life's most precious moments with artistry, authenticity, and heart.
                 </p>
               </div>
               
-              {/* Quick Links */}
+              Quick Links
               <div>
-                <h4 className="font-body text-sm font-medium mb-4">Quick Links</h4>
+                <h4 className="font-script text-sm font-medium mb-4">Quick Links</h4>
                 <div className="space-y-2">
-                  <a href="/portfolio-gallery" className="block font-body text-sm opacity-80 hover:opacity-100 transition-organic">
+                  <a href="/portfolio-gallery" className="block font-accent text-sm opacity-80 hover:opacity-100 transition-organic">
                     Portfolio Gallery
                   </a>
-                  <a href="/contact" className="block font-body text-sm opacity-80 hover:opacity-100 transition-organic">
+                  <a href="/contact" className="block font-accent text-sm opacity-80 hover:opacity-100 transition-organic">
                     Contact & Booking
                   </a>
-                  <a href="tel:+919870654345" className="block font-body text-sm opacity-80 hover:opacity-100 transition-organic">
+                  <a href="tel:+919870654345" className="block font-accent text-sm opacity-80 hover:opacity-100 transition-organic">
                     (+91) 9870654345
                   </a>
                 </div>
@@ -197,17 +197,17 @@ const ContactPage = () => {
               
               {/* Contact */}
               <div>
-                <h4 className="font-body text-sm font-medium mb-4">Get In Touch</h4>
+                <h4 className="font-script text-sm font-medium mb-4">Get In Touch</h4>
                 <div className="space-y-2">
-                  <p className="font-body text-sm opacity-80">Erode</p>
-                  <p className="font-body text-sm opacity-80">hello@classic6.photography</p>
-                  <p className="font-body text-sm opacity-80">Response within 24 hours</p>
+                  <p className="font-accent text-sm opacity-80">Erode</p>
+                  <p className="font-accent text-sm opacity-80">hello@classic6.photography</p>
+                  <p className="font-accent text-sm opacity-80">Response within 24 hours</p>
                 </div>
               </div>
             </div>
             
             <div className="border-t border-background/20 mt-8 pt-8 text-center">
-              <p className="font-body text-xs opacity-60">
+              <p className="font-accent text-xs opacity-60">
                 © {new Date()?.getFullYear()} Classic6 Photography. All rights reserved.
               </p>
             </div>

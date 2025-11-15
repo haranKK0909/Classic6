@@ -94,14 +94,14 @@ const ImageLightbox = ({
         
         {/* Image Info */}
         <div className="mt-6 text-center text-white max-w-2xl">
-          <h3 className="font-display text-xl font-medium mb-2">
+          <h3 className="font-scipt text-xl font-script mb-2">
             {currentImage?.title}
           </h3>
-          <p className="font-body text-sm opacity-80 mb-4">
+          <p className="font-accent text-sm opacity-80 mb-4">
             {currentImage?.description}
           </p>
           {currentImage?.client && (
-            <p className="font-body text-xs opacity-60">
+            <p className="font-accent text-xs opacity-60">
               {currentImage?.client}
             </p>
           )}
@@ -110,7 +110,7 @@ const ImageLightbox = ({
         {/* Image Counter */}
         {images?.length > 1 && (
           <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/50 px-3 py-1 rounded-full">
-            <span className="font-body text-sm text-white">
+            <span className="font-accent text-sm text-white">
               {currentIndex + 1} / {images?.length}
             </span>
           </div>

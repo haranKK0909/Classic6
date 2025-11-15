@@ -11,7 +11,7 @@ const ClassLabel = ({ altText = 'Class icon', className = '6', label = 'Class' }
       alt={altText}
       className="w-20 h-20 mb-3 object-contain" // Rectangle (wider than tall), increased from w-8 h-8; object-contain to fit without distortion
     />
-    <span className="font-body text-xs text-muted-foreground tracking-wide text-center">
+    <span className="font-accent text-xs text-muted-foreground tracking-wide text-center">
       {className}
     </span>
   </div>
@@ -46,11 +46,7 @@ const Header = () => {
 
   return (
     <header 
-      className={`fixed top-0 left-0 right-0 z-50 transition-organic ${
-        isScrolled 
-          ? 'bg-background/95 backdrop-blur-md shadow-soft border-b border-border' 
-          : 'bg-transparent'
-      }`}
+      className="fixed top-0 left-0 right-0 z-50 transition-organic bg-white/95 backdrop-blur-md shadow-soft border-b border-border"  
     >
       <div className="w-full">
         <div className="flex items-center justify-between h-16 px-6 lg:px-8">
@@ -68,7 +64,7 @@ const Header = () => {
               <Link
                 key={item?.path}
                 to={item?.path}
-                className={`flex items-center space-x-2 px-3 py-2 rounded-lg font-body text-sm font-medium transition-organic ${
+                className={`flex items-center space-x-2 px-3 py-2 rounded-lg font-accent text-sl font-medium transition-organic ${
                   isActivePath(item?.path)
                     ? 'text-accent bg-accent/10' :'text-foreground hover:text-accent hover:bg-accent/5'
                 }`}
@@ -80,18 +76,18 @@ const Header = () => {
           </nav>
 
           {/* Desktop CTA */}
-          <div className="hidden md:flex items-center space-x-4">
+          <div className="hidden md:flex items-center text-sl space-x-4">
             <Button 
               variant="outline" 
               size="sm"
-              className="font-body"
+              className="font-accent"
             >
               View Gallery
             </Button>
             <Button 
               variant="default" 
               size="sm"
-              className="bg-accent hover:bg-accent/90 text-accent-foreground font-body"
+              className="bg-accent hover:bg-accent/90 text-accent-foreground font-accent"
             >
               Begin Your Story
             </Button>
@@ -109,14 +105,14 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden bg-background/95 backdrop-blur-md border-t border-border">
+          <div className="md:hidden bg-background/95 text-sl backdrop-blur-md border-t border-border">
             <nav className="px-6 py-4 space-y-2">
               {navigationItems?.map((item) => (
                 <Link
                   key={item?.path}
                   to={item?.path}
                   onClick={() => setIsMenuOpen(false)}
-                  className={`flex items-center space-x-3 px-4 py-3 rounded-lg font-body text-sm font-medium transition-organic ${
+                  className={`flex items-center space-x-3 px-4 py-3 rounded-lg font-accent text-sm font-medium transition-organic ${
                     isActivePath(item?.path)
                       ? 'text-accent bg-accent/10' :'text-foreground hover:text-accent hover:bg-accent/5'
                   }`}
@@ -131,7 +127,7 @@ const Header = () => {
                 <Button 
                   variant="outline" 
                   fullWidth
-                  className="font-body"
+                  className="font-accent"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   View Gallery
@@ -139,7 +135,7 @@ const Header = () => {
                 <Button 
                   variant="default" 
                   fullWidth
-                  className="bg-accent hover:bg-accent/90 text-accent-foreground font-body"
+                  className="bg-accent hover:bg-accent/90 text-accent-foreground font-accent"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Begin Your Story

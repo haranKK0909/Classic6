@@ -5,6 +5,14 @@
   text-align: center;
 }
 
+.baskervville-text {
+  font-family: "Baskervville", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;   /* you can change it if you want */
+  font-style: normal;
+}
+
+
 .logo {
   height: 6em;
   padding: 1.5em;
